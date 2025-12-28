@@ -11,6 +11,8 @@
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
   body {
@@ -21,6 +23,7 @@
     width: 100%;
     max-width: 100%;
     padding: 0 15px;
+    box-sizing: border-box;
   }
 
   /* Prevent horizontal scrolling on all elements */
@@ -29,6 +32,8 @@
   *::after {
     max-width: 100%;
     box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .hero,
@@ -51,6 +56,7 @@
   h6 {
     overflow-x: hidden;
     max-width: 100%;
+    box-sizing: border-box;
   }
 
   /* Ensure text wraps properly */
@@ -69,6 +75,14 @@
     overflow-wrap: break-word;
     hyphens: auto;
     max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Force images to be responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 
   /* Improve button and link tap targets */
@@ -76,6 +90,16 @@
   .social-link,
   .nav-links a {
     min-height: 44px;
+    box-sizing: border-box;
+  }
+
+  /* Ensure no element exceeds viewport width */
+  .hero-image,
+  .about-image,
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
