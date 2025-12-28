@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampGear Elite | Sewa Alat Camping Premium</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/284/284469.png"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-campground me-2"></i>Camp<span>Gear</span> Elite
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rent">Sewa</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-custom" href="#rent">Booking Sekarang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="floating-element float-1">
+        <i class="fas fa-campground fa-3x"></i>
+      </div>
+      <div class="floating-element float-2">
+        <i class="fas fa-fire fa-3x"></i>
+      </div>
+      <div class="floating-element float-3">
+        <i class="fas fa-hiking fa-3x"></i>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="hero-title animate__animated animate__fadeInUp">
+              Sewa Alat Camping <span class="highlight">Premium</span> Seperti
+              Atlet Profesional
+            </h1>
+            <p
+              class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              Rasakan pengalaman camping terbaik dengan peralatan kelas
+              profesional. Kami menyediakan alat camping premium yang digunakan
+              oleh atlet dan petualang profesional. Kualitas terbaik untuk
+              petualangan tak terlupakan.
+            </p>
+
+            <div
+              class="d-flex flex-wrap gap-3 mt-4 animate__animated animate__fadeInUp animate__delay-2s"
+            >
+              <a href="#products" class="btn btn-custom btn-lg">
+                <i class="fas fa-eye me-2"></i> Jelajahi Produk
+              </a>
+              <a href="#rent" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-calendar-check me-2"></i> Booking Sekarang
+              </a>
+            </div>
+
+            <div
+              class="hero-stats animate__animated animate__fadeInUp animate__delay-3s"
+            >
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Alat Premium</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2.5K+</span>
+                <span class="stat-label">Pelanggan</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">99%</span>
+                <span class="stat-label">Kepuasan</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <div
+              class="position-relative animate__animated animate__fadeInRight animate__delay-1s"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="Camping Gear"
+                class="img-fluid rounded-3 shadow-lg hero-image"
+              />
+              <div class="position-absolute top-0 start-0 badge-premium">
+                <i class="fas fa-crown me-2"></i> Kualitas Elite
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Perlengkapan <span>Camping</span> Elite</h2>
+          <p>
+            Temukan peralatan camping premium dengan kualitas terbaik untuk
+            pengalaman outdoor yang tak terlupakan
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  class="product-img"
+                  alt="Tenda Premium"
+                />
+                <div class="product-badge">BEST SELLER</div>
+              </div>
+
+              <div class="product-content">
+                <h4 class="product-title">Tenda Expedition 4P</h4>
+                <p class="product-description">
+                  Tenda waterproof eksklusif dengan kapasitas 4 orang,
+                  dilengkapi teknologi anti-badai.
+                </p>
+
+                <div class="product-features">
+                  <span class="feature-tag">
+                    <i class="fas fa-users me-1"></i> 4 Orang
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-shield-alt me-1"></i> Stormproof
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-bolt me-1"></i> Quick Setup
+                  </span>
+                </div>
+
+                <div class="product-price">
+                  <div>
+                    <span class="price-amount">Rp 95.000</span>
+                    <span class="price-period"> / hari</span>
+                  </div>
+                  <button
+                    class="btn btn-custom btn-sm rent-btn"
+                    data-product="Tenda Expedition 4P"
+                  >
+                    <i class="fas fa-shopping-cart me-1"></i> Sewa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  class="product-img"
+                  alt="Sleeping Bag"
+                />
+                <div class="product-badge badge-success">TERSEDIA</div>
+              </div>
+
+              <div class="product-content">
+                <h4 class="product-title">Arctic Sleeping Bag -15°C</h4>
+                <p class="product-description">
+                  Sleeping bag eksklusif tahan hingga -15°C dengan material
+                  premium dan isolasi maksimal.
+                </p>
+
+                <div class="product-features">
+                  <span class="feature-tag">
+                    <i class="fas fa-snowflake me-1"></i> -15°C
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-feather-alt me-1"></i> Ultra Light
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-compress-arrows-alt me-1"></i> Compact
+                  </span>
+                </div>
+
+                <div class="product-price">
+                  <div>
+                    <span class="price-amount">Rp 45.000</span>
+                    <span class="price-period"> / hari</span>
+                  </div>
+                  <button
+                    class="btn btn-custom btn-sm rent-btn"
+                    data-product="Arctic Sleeping Bag -15°C"
+                  >
+                    <i class="fas fa-shopping-cart me-1"></i> Sewa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  class="product-img"
+                  alt="Kompor Portable"
+                />
+                <div class="product-badge badge-info">BARU</div>
+              </div>
+
+              <div class="product-content">
+                <h4 class="product-title">Jetboil Cooking System</h4>
+                <p class="product-description">
+                  Sistem memasak portabel dengan teknologi cepat dan efisien
+                  untuk petualangan ekstrem.
+                </p>
+
+                <div class="product-features">
+                  <span class="feature-tag">
+                    <i class="fas fa-tachometer-alt me-1"></i> Fast Boil
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-weight me-1"></i> 0.7 kg
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-wind me-1"></i> Windproof
+                  </span>
+                </div>
+
+                <div class="product-price">
+                  <div>
+                    <span class="price-amount">Rp 35.000</span>
+                    <span class="price-period"> / hari</span>
+                  </div>
+                  <button
+                    class="btn btn-custom btn-sm rent-btn"
+                    data-product="Jetboil Cooking System"
+                  >
+                    <i class="fas fa-shopping-cart me-1"></i> Sewa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1517770413964-df8ca61194a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  class="product-img"
+                  alt="Backpack"
+                />
+                <div class="product-badge badge-warning">TERBATAS</div>
+              </div>
+
+              <div class="product-content">
+                <h4 class="product-title">Tactical Backpack 70L</h4>
+                <p class="product-description">
+                  Backpack kapasitas besar dengan sistem organisasi canggih dan
+                  material anti-air.
+                </p>
+
+                <div class="product-features">
+                  <span class="feature-tag">
+                    <i class="fas fa-suitcase-rolling me-1"></i> 70L
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-tint-slash me-1"></i> Waterproof
+                  </span>
+                  <span class="feature-tag">
+                    <i class="fas fa-user-shield me-1"></i> Ergonomic
+                  </span>
+                </div>
+
+                <div class="product-price">
+                  <div>
+                    <span class="price-amount">Rp 55.000</span>
+                    <span class="price-period"> / hari</span>
+                  </div>
+                  <button
+                    class="btn btn-custom btn-sm rent-btn"
+                    data-product="Tactical Backpack 70L"
+                  >
+                    <i class="fas fa-shopping-cart me-1"></i> Sewa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-custom btn-lg">
+            <i class="fas fa-box-open me-2"></i> Lihat Semua Produk Elite
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section parallax">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="text-white">Mengapa <span>CampGear Elite</span>?</h2>
+          <p class="text-white">
+            Kami memberikan pengalaman premium seperti atlet profesional dengan
+            layanan eksklusif
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h4 class="feature-title">Kualitas Elite</h4>
+              <p class="feature-desc">
+                Alat camping dengan standar kualitas tertinggi seperti yang
+                digunakan atlet profesional.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shipping-fast"></i>
+              </div>
+              <h4 class="feature-title">Pengiriman Express</h4>
+              <p class="feature-desc">
+                Gratis pengantaran express untuk pemesanan di atas Rp 300.000 di
+                area Jabodetabek.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4 class="feature-title">Support 24/7</h4>
+              <p class="feature-desc">
+                Tim ahli siap membantu Anda kapan saja, 24 jam sehari, 7 hari
+                seminggu.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h4 class="feature-title">Garansi Premium</h4>
+              <p class="feature-desc">
+                Semua peralatan kami memiliki garansi premium dan perawatan
+                berkala.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4 class="feature-title">Peralatan Lengkap</h4>
+              <p class="feature-desc">
+                Semua kebutuhan camping dalam satu tempat, dari tenda hingga
+                perlengkapan masak.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <h4 class="feature-title">Konsultasi Ahli</h4>
+              <p class="feature-desc">
+                Konsultasi gratis dengan ahli outdoor untuk rencana petualangan
+                Anda.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4 class="feature-title">Keamanan Terjamin</h4>
+              <p class="feature-desc">
+                Semua peralatan telah melalui pemeriksaan keamanan dan
+                keselamatan.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4 class="feature-title">Fleksibilitas</h4>
+              <p class="feature-desc">
+                Pilihan sewa harian, mingguan, atau bulanan sesuai kebutuhan
+                Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Testimoni <span>Eksklusif</span></h2>
+          <p>
+            Pengalaman nyata dari para petualang yang telah menggunakan
+            peralatan kami
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "CampGear Elite benar-benar mengubah pengalaman camping saya!
+                Peralatan mereka premium dan terawat dengan sangat baik. Tenda
+                Expedition 4P-nya tahan badai dan sangat nyaman. Seperti
+                menggunakan peralatan atlet profesional!"
+              </p>
+
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/men/22.jpg"
+                  alt="Andi Pratama"
+                  class="author-avatar"
+                />
+                <div class="author-info">
+                  <h5>Andi Pratama</h5>
+                  <p>Mountaineer & Adventure Guide</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "Sebagai keluarga yang sering camping, kami sangat puas dengan
+                layanan CampGear Elite. Sleeping bag Arctic -15°C sangat hangat
+                untuk anak-anak di pegunungan. Tim supportnya sangat responsif
+                dan membantu!"
+              </p>
+
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Sari Dewi"
+                  class="author-avatar"
+                />
+                <div class="author-info">
+                  <h5>Sari Dewi</h5>
+                  <p>Family Adventure Enthusiast</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "Jetboil Cooking System dari CampGear Elite adalah game changer!
+                Memasak di gunung menjadi sangat cepat dan efisien. Backpack
+                tactical-nya juga ergonomis dan nyaman untuk hiking jarak jauh.
+                Highly recommended!"
+              </p>
+
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/men/65.jpg"
+                  alt="Rizky Maulana"
+                  class="author-avatar"
+                />
+                <div class="author-info">
+                  <h5>Rizky Maulana</h5>
+                  <p>Professional Hiker & Blogger</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rental Form Section -->
+    <section id="rent" class="rental-section parallax">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="rental-form-container">
+              <div class="section-title text-center mb-5">
+                <h2>Formulir <span>Penyewaan Elite</span></h2>
+                <p class="text-dark">
+                  Isi formulir di bawah ini untuk menyewa peralatan camping
+                  premium
+                </p>
+              </div>
+
+              <!-- Form -->
+              <form id="rentalForm">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label for="name" class="form-label fw-bold"
+                      >Nama Lengkap *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                      placeholder="Masukkan nama lengkap Anda"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label for="email" class="form-label fw-bold"
+                      >Email *</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                      placeholder="nama@email.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label for="phone" class="form-label fw-bold"
+                      >Nomor Telepon/WA *</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      required
+                      placeholder="08xxxxxxxxxx"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label for="product" class="form-label fw-bold"
+                      >Pilih Produk Elite *</label
+                    >
+                    <select class="form-select" id="product" required>
+                      <option value="" selected disabled>
+                        -- Pilih alat camping premium --
+                      </option>
+                      <option value="Tenda Expedition 4P">
+                        Tenda Expedition 4P
+                      </option>
+                      <option value="Arctic Sleeping Bag -15°C">
+                        Arctic Sleeping Bag -15°C
+                      </option>
+                      <option value="Jetboil Cooking System">
+                        Jetboil Cooking System
+                      </option>
+                      <option value="Tactical Backpack 70L">
+                        Tactical Backpack 70L
+                      </option>
+                      <option value="Paket Camping Lengkap Elite">
+                        Paket Camping Lengkap Elite
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label for="startDate" class="form-label fw-bold"
+                      >Tanggal Mulai *</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="startDate"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label for="endDate" class="form-label fw-bold"
+                      >Tanggal Selesai *</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="endDate"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-bold"
+                    >Catatan Khusus / Pertanyaan</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Berikan detail tambahan atau pertanyaan khusus..."
+                  ></textarea>
+                </div>
+
+                <!-- Tombol Submit -->
+                <div class="d-grid gap-2">
+                  <button
+                    type="submit"
+                    class="btn btn-custom btn-lg py-3"
+                    id="submitBtn"
+                  >
+                    <i class="fas fa-paper-plane me-2"></i> Kirim Permintaan
+                    Sewa Elite
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-lg py-3"
+                    id="resetBtn"
+                  >
+                    <i class="fas fa-redo me-2"></i> Reset Form
+                  </button>
+                </div>
+
+                <div class="text-center mt-4">
+                  <small class="text-muted"
+                    >* Tim kami akan menghubungi Anda dalam 1 jam untuk
+                    konfirmasi</small
+                  >
+                </div>
+              </form>
+
+              <!-- Success Message -->
+              <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle"></i>
+                <h3 class="mb-3">Permintaan Sewa Elite Dikirim!</h3>
+                <p class="text-muted mb-4">
+                  Tim elite kami akan menghubungi Anda dalam
+                  <strong>1 jam</strong> untuk konfirmasi dan detail penyewaan.
+                </p>
+                <button class="btn btn-custom" id="newRequestBtn">
+                  <i class="fas fa-redo me-2"></i> Buat Permintaan Baru
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="footer-logo">
+              <i class="fas fa-campground me-2"></i>Camp<span>Gear</span> Elite
+            </div>
+            <p class="footer-about">
+              Penyedia alat camping premium dengan kualitas elite untuk
+              pengalaman outdoor yang tak terlupakan. Layanan eksklusif untuk
+              petualang sejati.
+            </p>
+
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h5 class="footer-heading">Menu Utama</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+              </li>
+              <li>
+                <a href="#products"
+                  ><i class="fas fa-chevron-right"></i> Produk</a
+                >
+              </li>
+              <li>
+                <a href="#features"
+                  ><i class="fas fa-chevron-right"></i> Fitur</a
+                >
+              </li>
+              <li>
+                <a href="#testimonials"
+                  ><i class="fas fa-chevron-right"></i> Testimoni</a
+                >
+              </li>
+              <li>
+                <a href="#rent"><i class="fas fa-chevron-right"></i> Sewa</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <h5 class="footer-heading">Produk Elite</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Tenda Premium</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Sleeping Bag</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Kompor Portable</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Backpack Tactical</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Paket Lengkap</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Kontak Kami</h5>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span
+                  >Adventure Tower Lt. 15<br />Jl. Petualangan No. 123,
+                  Jakarta</span
+                >
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <span>+62 812 3456 7890<br />(WhatsApp Available)</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>elite@campgear.com<br />support@campgear.com</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Buka 24/7<br />Untuk Booking & Konsultasi</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2023 <span class="text-warning">CampGear Elite</span>. All
+            rights reserved. | Designed with
+            <i class="fas fa-heart text-danger"></i> for true adventurers
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
