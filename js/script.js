@@ -1,32 +1,9 @@
 // ===== DOM ELEMENTS =====
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const navLinks = document.querySelector(".nav-links");
 const header = document.getElementById("header");
 const contactForm = document.getElementById("contactForm");
 const skillBars = document.querySelectorAll(".skill-progress");
 const allSections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll(".nav-links a");
-
-// ===== MOBILE MENU TOGGLE =====
-function toggleMobileMenu() {
-  navLinks.classList.toggle("active");
-  const icon = mobileMenuBtn.querySelector("i");
-  icon.className = navLinks.classList.contains("active")
-    ? "fas fa-times"
-    : "fas fa-bars";
-
-  // Toggle body scroll when menu is open
-  document.body.style.overflow = navLinks.classList.contains("active")
-    ? "hidden"
-    : "";
-}
-
-// ===== CLOSE MOBILE MENU ON LINK CLICK =====
-function closeMobileMenu() {
-  navLinks.classList.remove("active");
-  mobileMenuBtn.querySelector("i").className = "fas fa-bars";
-  document.body.style.overflow = "";
-}
 
 // ===== HEADER SCROLL EFFECT =====
 function handleHeaderScroll() {
@@ -104,11 +81,6 @@ function initSmoothScroll() {
 
         // Update URL without page reload
         history.pushState(null, null, targetId);
-
-        // Close mobile menu if open
-        if (navLinks.classList.contains("active")) {
-          closeMobileMenu();
-        }
       }
     });
   });
@@ -262,10 +234,6 @@ function optimizeForTouch() {
             .touch-device .career-card:hover,
             .touch-device .achievement-card:hover {
                 transform: none !important;
-            }
-            
-            .touch-device .nav-links a:after {
-                display: none;
             }
         `;
     document.head.appendChild(style);
